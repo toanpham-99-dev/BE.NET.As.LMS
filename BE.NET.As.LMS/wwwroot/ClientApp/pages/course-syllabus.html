@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- fontawesome -->
+  <!-- <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    /> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../asset/scss/course-syllabus.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var hashCode = "1234928A0-E936-4BF0-BD08-12DF85F34979";
+      getCourseDetail(hashCode);
+      // info login
+     //userLogin(token);
+    });
+  </script>
+  <title>Course Syllabus</title>
+</head>
+<body>
+  <!-- header starts here -->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <div>
+            <a href="#" class="header__logo"><img src="../asset/img/f8_icon.png" alt="f8-logo" width="36px"
+                height="36px" /></a>
+            <button class="header__btn-back">
+              <i class="fas fa-chevron-left header__btn-back--icon"></i>
+              <span class="header__btn-back--text">QUAY LẠI</span>
+            </button>
+          </div>
+          <a class="header__hamburger-btn"><i class="fas fa-bars"></i></a>
+          <ul>
+            <li>
+              <a href="../pages/login.html"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+            </li>
+            <li>
+              <a href="../pages/home-page.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="../pages/"><i class="fas fa-hiking"></i> Lộ trình</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-lightbulb"></i> Học</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-newspaper"></i> Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <div class="header__search">
+            <i class="bx bx-search-alt-2"></i>
+            <input type="text" class="header__search__input" placeholder="Tìm kiếm khóa học, bài biết, video, ..." />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="header__login">
+            <a class="header__login__alt-search"><i class='bx bx-search-alt-2'></i></a>
+            <a class="header__login__cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="./login.html" class="header__login__btn">Đăng Nhập</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <!-- content starts here -->
+  <div class="content-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-1 hide-sidebar">
+          <div class="sidebar">
+            <div class="sidebar__btn">
+              <i class="fas fa-plus"></i>
+              <ul>
+                <li>
+                  <a href=""><i class="fas fa-pen"></i> Viết Blog</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-question"></i> Đặt câu hỏi</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-code"></i> Chia sẻ code</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sidebar__nav">
+              <ul>
+                <li class="active">
+                  <i class="fas fa-home"></i><a href="">Home</a>
+                </li>
+                <li><i class="fas fa-hiking"></i><a href=""> Lộ trình</a></li>
+                <li><i class="fas fa-lightbulb"></i><a href=""> Học</a></li>
+                <li><i class="fas fa-newspaper"></i><a href=""> Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-11 col-sm-12">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Main Content left -->
+              <div class="col-sm-8 main-content">
+                <h1 id="course_title" class="main-content__header">
+                  Tiêu đề khóa học
+                </h1>
+                <p id="course_summary" class="main-content__sub-header">
+                  Sơ lược khóa học
+                </p>
+
+                <div class="main-content__expectation">
+                  <h2 class="main-content__expectation-header">
+                    Bạn sẽ học được gì
+                  </h2>
+                  <div class="main-content__expectation-content">
+                    <ul id="course_description" class="main-content__expectation-list">
+
+                      <!-- học xong sẽ đặt được -->
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div>
+                  <div class="syllabus">
+                    <div class="syllabus__header">
+                      <h2 class="syllabus__title">Nội dung khóa học</h2>
+                      <div class="syllabus__infor">
+                        <div id="syllabus-infor-container" class="syllabus__infor-container">
+
+                        </div>
+                        <a href="#" class="syllabus__btn-expand">Mở rộng tất cả</a>
+                      </div>
+                    </div>
+
+                    <div id="syllabus_content" class="syllabus__content">
+                    </div>
+                  </div>
+
+                  <div class="requirements">
+                    <h2 class="requirements__header">Yêu cầu</h2>
+
+                    <label for=""> Nội dung yêu cầu khi học khóa học.</label>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Main Content left -->
+
+              <!-- Main Content right -->
+              <div class="col-sm-4 side-content">
+                <div id="video-intro" class="side-content__video-container">
+                  <iframe class="side-content__video" src="https://www.youtube.com/embed/"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div id="status-course">
+                </div>
+
+                <div class="side-content__infor">
+                  <p class="side-content__text">
+                    <i class="fas fa-layer-group side-content__icon"></i>
+                    <span id="level" class="side-content__text--detail"></span>
+                  </p>
+                  <p class="side-content__text">
+                    <i class="fas fa-film side-content__icon"></i>
+                    <span id="totalLession" class="side-content__text--detail"></span>
+                  </p>
+                  <p class="side-content__text">
+                    <i class="fas fa-clock side-content__icon"></i>
+                    <span id="totalTime" class="side-content__text--detail"></span>
+                  </p>
+                  <p class="side-content__text">
+                    <i class="fas fa-battery-full side-content__icon"></i>
+                    <span class="side-content__text--detail">Học mọi lúc, mọi nơi</span>
+                  </p>
+                </div>
+              </div>
+              <!-- End of Main Content right -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content ends here -->
+
+  <!-- footer starts here -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <div class="footer__nav">
+            <a href="#"><img src="../asset/img/f8_icon.png" width="20px" height="20px" alt="footer-logo" /></a>
+            <ul>
+              <li><a href="">Giới thiệu</a></li>
+              <li><a href="">Cơ hội việc làm</a></li>
+              <li class="pop-up">
+                <ul>
+                  <li><a href="#">Tải phần mềm Macbook</a></li>
+                  <li><a href="#">Evondev</a></li>
+                </ul>
+                <a href="">Đối tác <i class="far fa-chevron-up"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="footer__social__icons">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/course-syllabus.js"></script>
+</body>
+
+</html>

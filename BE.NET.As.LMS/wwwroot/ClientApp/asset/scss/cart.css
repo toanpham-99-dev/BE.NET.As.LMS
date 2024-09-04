@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cart_modal {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full_page {
+  background: rgba(28, 29, 31, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.cart_modal .cart_container {
+  background-color: #fff;
+  width: 40rem;
+  min-height: 4.8em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  padding: 20px;
+}
+
+.active_add_item {
+  margin-bottom: 5%;
+}
+
+.active_add_item .cart_active_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.active_add_item .cart_active_header .cancel-btn {
+  position: absolute;
+  right: 15px;
+}
+
+.active_add_item .go_to_cart_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.active_add_item .go_to_cart_info .cart-check-icon {
+  position: absolute;
+  top: 25%;
+}
+
+.active_add_item .go_to_cart_info .item_info {
+  position: relative;
+  margin-left: 8%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.active_add_item .go_to_cart_info .item_info .cart-item-text {
+  width: 65%;
+  padding-left: 15px;
+  font-size: 13px;
+}
+
+.active_add_item .go_to_cart_info .item_info .go_to_cart {
+  position: absolute;
+  right: -3px;
+  top: 25%;
+  width: 6em;
+  height: 3em;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-weight: bold;
+}
+
+.active_add_item .go_to_cart_info .item_info .go_to_cart:hover {
+  background-color: black;
+}
+
+.group_item a {
+  text-decoration: none;
+  color: black;
+}
+
+.group_item a:hover {
+  color: black;
+}
+
+.payment_cart {
+  border: 1px solid rgba(209, 215, 220, 0.9);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.payment_cart .course_image img:hover {
+  opacity: 0.7;
+}
+
+.payment_cart .bought_together {
+  padding: 15px;
+}
+
+.payment_cart .checked {
+  color: orange;
+}
+
+.payment_cart .rating_count_register {
+  font-size: 13px;
+}
+
+.payment_cart .rating_point {
+  color: #b4690e;
+  font-weight: bold;
+}
+
+.payment_cart .best_seler_title {
+  background-color: #eceb98;
+  width: 90px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  height: 20px;
+}
+
+.payment_cart .cart_detail_info, .payment_cart .items_align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.payment_cart .items_text_info {
+  margin-left: 15px;
+  width: 53%;
+}
+
+.payment_cart .items_text_info .course_title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.payment_cart .items_text_info .course_description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.payment_cart .course_price_item {
+  text-align: right;
+  padding-left: 10px;
+}
+
+.payment_cart .course_price_item .discount_prices {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.payment_cart .course_price_item .original_prices {
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.total_prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.total_prices .total_prices_checkout {
+  position: relative;
+}
+
+.total_prices .add_cart_btn {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: rgba(164, 53, 240, 0.9);
+  position: absolute;
+  right: 5%;
+}
+
+.total_prices .add_cart_btn:hover {
+  background-color: #922fd4;
+}
+
+.other_topic {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.other_topic a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 500px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: bottom;
+  white-space: nowrap;
+  margin-left: 5px;
+  width: 100%;
+  padding: 1% 2%;
+  color: #000000;
+}
+
+.other_topic a:hover {
+  background-color: rgba(209, 215, 220, 0.5);
+  color: #000000;
+}
+
+@media screen and (max-width: 650px) {
+  .cart_modal .cart_container {
+    background-color: #fff;
+    width: 35rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    padding: 20px;
+  }
+  .item_info img {
+    width: 100px;
+    height: 80px;
+  }
+  .active_add_item {
+    margin-bottom: 15%;
+  }
+  .active_add_item .cart_active_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .active_add_item .cart_active_header .cancel-btn {
+    position: absolute;
+    right: 15px;
+  }
+  .active_add_item .go_to_cart_info .cart-check-icon {
+    position: absolute;
+    top: 25%;
+  }
+  .active_add_item .go_to_cart_info .item_info {
+    position: relative;
+    margin-left: 8%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .active_add_item .go_to_cart_info .item_info .cart-item-text {
+    width: 100%;
+    padding-left: 15px;
+    font-size: 13px;
+  }
+  .active_add_item .go_to_cart_info .item_info .go_to_cart {
+    display: block;
+    margin-top: 15%;
+    width: 109%;
+    height: 3em;
+    border: none;
+    color: white;
+    background-color: #000001;
+    text-align: center;
+    font-weight: bold;
+  }
+  .active_add_item .go_to_cart_info .item_info .go_to_cart:hover {
+    background-color: #000001;
+  }
+  .course_image img {
+    width: 100px;
+    height: 80px;
+  }
+  .items_text_info {
+    width: 60% !important;
+  }
+  .total_prices {
+    display: block;
+    padding-top: 1px;
+    margin-bottom: 5% !important;
+  }
+  .total_prices .add_cart_btn {
+    width: 88%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: rgba(164, 53, 240, 0.9);
+  }
+  .cart_detail_info, .items_align {
+    margin-bottom: 1% !important;
+  }
+}
+/*# sourceMappingURL=cart.css.map */

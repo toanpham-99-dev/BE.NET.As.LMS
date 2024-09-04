@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//--- Card Diablog
+.cart_modal{
+    position: relative;
+    width: 100% ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full_page{
+    background: rgba(28,29,31,.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@mixin verical_right {
+    position: absolute;
+    right: 15px;
+}
+@mixin overflow_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@mixin center_text {
+    text-align: center;
+    font-weight: bold;
+}
+.cart_modal .cart_container{
+    background-color: #fff;
+    width: 40rem;
+    min-height: 4.8em;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 20px;
+}
+// .cart_container{
+//     background-color: #fff;
+//     width: 40em;
+//     min-height: 4.8em;
+//     box-sizing: border-box;
+//     position: absolute;
+//     padding: 20px;
+// }
+.active_add_item{
+    margin-bottom: 5%;
+    .cart_active_header{
+        display: flex;
+        .cancel-btn{
+            @include verical_right;
+        }
+        
+    }
+
+    .go_to_cart_info{
+        display: flex;
+        position: relative;
+        .cart-check-icon{
+            position: absolute;
+            top: 25%;
+        }
+        .item_info{
+            position: relative;
+            margin-left: 8%;
+            width: 100%;
+            display: flex;
+            .cart-item-text{
+                width: 65%;
+                padding-left: 15px;
+                font-size: 13px;
+            }
+            .go_to_cart{
+                position: absolute;
+                right: -3px;
+                top: 25%;
+                width: 6em;
+                height: 3em;
+                border: none;
+                color: white;
+                background-color: rgba($color: #000000, $alpha: 0.9);
+                text-align: center;
+                font-weight: bold;
+            }
+            .go_to_cart:hover{
+                background-color: rgba($color: #000000, $alpha: 1.0);
+            }
+        }
+        
+    }
+}
+.group_item a{
+    text-decoration: none;
+    color: black;
+}
+.group_item a:hover{
+    color: black;
+}
+.payment_cart{
+    border: 1px solid rgba(209,215,220, 0.9);
+    width: 100%;
+    margin-bottom: 20px;
+    .course_image img:hover{
+        opacity: 0.7;
+
+    }
+    .bought_together{
+        padding: 15px;
+    }
+    .checked {
+        color: orange;
+      }
+      .rating_count_register{
+          font-size: 13px;
+      }
+    .rating_point{
+        color: rgb(180,105,14);
+        font-weight: bold;
+    }
+    .best_seler_title{
+        background-color: rgb(236,235,152);
+        width: 90px;
+        @include center_text;
+        font-size: 14px;
+        height: 20px;
+    }
+    .cart_detail_info, .items_align{
+        display: flex;
+        margin-bottom: 3%;
+    }
+    .items_text_info{
+        margin-left: 15px;
+        width: 53%;
+        .course_title{
+            @include overflow_text;
+        }
+        .course_description{
+            @include overflow_text;
+            font-size: 12px;
+        }
+    }
+    .course_price_item{
+        text-align: right;
+        padding-left: 10px;
+        .discount_prices{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .original_prices{
+            font-size: 12px;
+            text-decoration: line-through;
+        }
+    }
+    
+
+}
+.total_prices{
+    display: flex;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    .total_prices_checkout{
+        position: relative;
+    }
+    .add_cart_btn{
+        @include center_text;
+        color: white;
+        width: 150px;
+        height: 40px;
+        border: none;
+        background-color: rgba(164,53,240, 0.9);
+        position: absolute;
+        right: 5%;
+    }
+    .add_cart_btn:hover{
+        background-color: rgb(146, 47, 212);
+    }
+}
+.other_topic{
+    margin-top: 20px;
+    width: 100%;
+    a{
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 500px;
+        position: relative;
+        align-items: center;
+        user-select: none;
+        vertical-align: bottom;
+        white-space: nowrap;
+        margin-left: 5px;
+        width: 100%;
+        padding: 1% 2%;
+        color: #000000;
+    }
+    a:hover{
+        background-color: rgba(209,215,220, 0.5);
+        color: #000000;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .cart_modal .cart_container{
+        background-color: #fff;
+        width: 35rem;
+        // min-height: 4.8em;
+        box-sizing: border-box;
+        position: absolute;
+        padding: 20px;
+    }
+    .item_info img{
+        width: 100px;
+        height: 80px;
+    }
+    .active_add_item{
+        margin-bottom: 15%;
+        
+        .cart_active_header{
+            display: flex;
+            .cancel-btn{
+                @include verical_right;
+            }
+            
+        }
+    
+        .go_to_cart_info{
+            // display: flex;
+            // position: relative;
+            .cart-check-icon{
+                position: absolute;
+                top: 25%;
+            }
+            .item_info{
+                position: relative;
+                margin-left: 8%;
+                width: 100%;
+                display: flex;
+                .cart-item-text{
+                    width: 100%;
+                    padding-left: 15px;
+                    font-size: 13px;
+                }
+                .go_to_cart{
+                    // position: absolute;
+                    // right: -3px;
+                    // top: 25%;
+                    display: block;
+                    margin-top: 15%;
+                    width: 109%;
+                    height: 3em;
+                    border: none;
+                    color: white;
+                    background-color: rgba($color: #000001, $alpha: 1);
+                    text-align: center;
+                    font-weight: bold;
+                }
+                .go_to_cart:hover{
+                    background-color: rgba($color: #000001, $alpha: 1.0);
+                }
+            }
+            
+        }
+    }
+    .course_image img{
+        width: 100px;
+        height: 80px;
+    }
+    .items_text_info{
+        width: 60%!important;
+    }
+    .total_prices{
+        display: block;
+        padding-top: 1px;
+        margin-bottom: 5%!important;
+        .add_cart_btn{
+            width: 88%;
+            @include center_text;
+            color: white;
+            border: none;
+            background-color: rgba(164,53,240, 0.9);
+           
+        }
+    }
+    .cart_detail_info, .items_align{
+        margin-bottom: 1%!important;
+    }
+}

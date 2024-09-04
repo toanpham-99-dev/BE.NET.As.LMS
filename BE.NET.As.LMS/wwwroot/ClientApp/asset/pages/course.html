@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khóa học</title>
+    <!-- font aware some & bootstrap -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="../asset/scss/course.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="DL__header">
+      <div class="DL__header-left-icon">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <a href="" id="DL__header-logo"
+        ><img
+          src="https://fullstack.edu.vn/assets/images/f8_text_logo.png"
+          alt="F8"
+      /></a>
+      <div class="DL__header-vertical"></div>
+      <div class="DL__header-left-title">Javascript Cơ Bản</div>
+      <div class="DL__header-right">
+        <i class="fas fa-question-circle"></i>
+        <span>Hướng dẫn</span>
+      </div>
+    </header>
+    <!-- header End -->
+
+    <!-- content Start -->
+    <section>
+      <div class="DL__content">
+        <div class="DL__content-left">
+          <div class="DL__content-video" id="scroll">
+            <div class="DL__content-video-player">
+              <iframe src="https://www.youtube.com/embed/eukA1NGSM5w"> </iframe>
+            </div>
+            <div class="DL__content-control">
+              <div class="DL__content-previous-video">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="DL__content-next-video">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div id="DL__content-overview">Nội dung</div>
+        </div>
+
+        <div class="DL__content-right">
+          <div class="sidebar">
+            <div class="sidebar__header">
+              <h1 class="sidebar__title">HTML, CSS từ zero đến hero</h1>
+              <p class="sidebar__progress">Hoàn thành 1/113 bài học (0%)</p>
+            </div>
+
+            <div class="sidebar__content">
+              <div class="learning-section">
+                <input
+                  type="checkbox"
+                  id="check"
+                  class="learning-section__checkbox"
+                />
+                <label class="learning-section__label" for="check">
+                  <div class="learning-section__header">
+                    <h4 class="learning-section__header--title">
+                      Phần 1: Giới thiệu
+                    </h4>
+                    <p class="learning-section__header--progress">
+                      1/2 | 05:44
+                    </p>
+                  </div>
+                </label>
+
+                <div class="content">
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          1. Làm được gì sau khóa học?
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">03:15</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">2. HTML, CSS là gì?</p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">02:29</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="learning-section">
+                <input
+                  type="checkbox"
+                  id="check1"
+                  class="learning-section__checkbox"
+                />
+                <label class="learning-section__label" for="check1">
+                  <div class="learning-section__header">
+                    <h4 class="learning-section__header--title">
+                      Phần 2: Làm quen với công cụ
+                    </h4>
+                    <p class="learning-section__header--progress">
+                      0/2 | 06:52
+                    </p>
+                  </div>
+                </label>
+
+                <div class="content">
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          3. Làm quen với Dev Tools
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">03:55</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                        <button class="content__btn">4</button>
+                        <button class="content__btn">5</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          4. Cài đặt môi trường
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">02:57</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="learning-section">
+                <input
+                  type="checkbox"
+                  id="check2"
+                  class="learning-section__checkbox"
+                />
+                <label class="learning-section__label" for="check2">
+                  <div class="learning-section__header">
+                    <h4 class="learning-section__header--title">
+                      Phần 3: Làm quen với HTML
+                    </h4>
+                    <p class="learning-section__header--progress">
+                      0/5 | 25:24
+                    </p>
+                  </div>
+                </label>
+                <div class="content">
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          5. Cấu trúc file HTML
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">03:55</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                        <button class="content__btn">4</button>
+                        <button class="content__btn">5</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          6. Comments trong HTML
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">02:57</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          7. Test tính cẩn thận và chỉn chu của bạn
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">04:00</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                        <button class="content__btn">4</button>
+                        <button class="content__btn">5</button>
+                        <button class="content__btn">6</button>
+                        <button class="content__btn">7</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          8. Thẻ HTML thông dụng
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">11:08</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                        <button class="content__btn">4</button>
+                        <button class="content__btn">5</button>
+                        <button class="content__btn">6</button>
+                        <button class="content__btn">7</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          9. Attribute trong HTML
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">01:54</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                        <button class="content__btn">4</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="learning-section">
+                <input
+                  type="checkbox"
+                  id="check3"
+                  class="learning-section__checkbox"
+                />
+                <label class="learning-section__label" for="check3">
+                  <div class="learning-section__header">
+                    <h4 class="learning-section__header--title">
+                      Phần 4: Làm quen với CSS
+                    </h4>
+                    <p class="learning-section__header--progress">
+                      0/9 | 55:58
+                    </p>
+                  </div>
+                </label>
+                <div class="content">
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          10. Sử dụng CSS trong HTML
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">07:13</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                        <button class="content__btn">4</button>
+                        <button class="content__btn">5</button>
+                        <button class="content__btn">6</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">11. ID và Class</p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">04:18</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                        <button class="content__btn">4</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">12. CSS Selector</p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">04:00</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                        <button class="content__btn">2</button>
+                        <button class="content__btn">3</button>
+                        <button class="content__btn">4</button>
+                        <button class="content__btn">5</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          13. Độ ưu tiên trong CSS
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">11:08</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="content__exercise">
+                      <h3 class="content__exercise-text">Bài tập</h3>
+                      <div class="content__btn-box">
+                        <button class="content__btn">1</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">
+                          14. Đặt biến trong CSS
+                        </p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">01:54</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">15. Đơn vị trong CSS</p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">10:56</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">16. CSS Functions</p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">06:14</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">17. Pseudo Classes</p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">03:43</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__lesson">
+                    <div class="content__title-box">
+                      <div class="content__icon-box">
+                        <i class="fas fa-lock content__icon-lock"></i>
+                      </div>
+                      <div class="content__text-box">
+                        <p class="content__text-header">18. Pseudo Elements</p>
+                        <p class="content__play-box">
+                          <i class="fas fa-play-circle content__icon-play"></i>
+                          <span class="content__video-length">06:15</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content End -->
+
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

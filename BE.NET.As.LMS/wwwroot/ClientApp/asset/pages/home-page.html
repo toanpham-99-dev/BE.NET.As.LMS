@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F8</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="../asset/scss/home-page.css">
+</head>
+<body>
+  <!-- header starts here -->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <div>
+            <a href="#" class="header__logo"><img src="../asset/img/f8_icon.png" alt="f8-logo" width="36px" height="36px"></a>
+            <h4 class="header__title">Học lập trình để đi làm</h4>
+          </div>
+          <a class="header__hamburger-btn"><i class="fas fa-bars"></i></a>
+          <ul>
+            <li><a href=""><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+            <li><a href=""><i class="fas fa-home"></i> Home</a></li>
+            <li><a href=""><i class="fas fa-hiking"></i> Lộ trình</a></li>
+            <li><a href=""><i class="fas fa-lightbulb"></i> Học</a></li>
+            <li><a href=""><i class="fas fa-newspaper"></i> Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <div class="header__search">
+            <i class='bx bx-search-alt-2'></i>
+            <input type="text" class="header__search__input" placeholder="Tìm kiếm khóa học, bài biết, video, ...">
+
+            <div class="header__search__results">
+              <p><i class='bx bx-search-alt-2'></i> Kết quả cho 'something'</p>
+              <div class="recommended__results">
+                <div class="recommended__results__heading">
+                  <h5>Bài Viết</h5>
+                  <a href="">Xem thêm</a>
+                </div>
+                <a href="" class="recommended__results__item"><img src="../asset/img/f8_icon.png" witdh="32px" height="32px" alt=""><span>html, css</span></a>
+                <a href="" class="recommended__results__item"><img src="../asset/img/avatar__search.jpg" witdh="32px" height="32px"  alt=""><span>html, css</span></a>
+                <a href="" class="recommended__results__item"><img src="../asset/img/avatar__search.jpg" witdh="32px" height="32px" alt=""><span>html, css</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="header__login">
+            <a class="header__login__alt-search"><i class='bx bx-search-alt-2'></i></a>
+            <a class="header__login__cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="header__login__btn">Đăng Nhập</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <!-- content starts here -->
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-1  hide-sidebar">
+          <div class="sidebar">
+            <div class="sidebar__btn">
+              <i class="fas fa-plus"></i>
+              <ul>
+                <li><a href=""><i class="fas fa-pen"></i> Viết Blog</a></li>
+                <li><a href=""><i class="fas fa-question"></i> Đặt câu hỏi</a></li>
+                <li><a href=""><i class="fas fa-code"></i> Chia sẻ code</a></li>
+              </ul>
+            </div>
+            <div class="sidebar__nav">
+              <ul>
+                <li class="active"><i class="fas fa-home"></i><a href="">Home</a></li>
+                <li><i class="fas fa-hiking"></i><a href=""> Lộ trình</a></li>
+                <li><i class="fas fa-lightbulb"></i><a href=""> Học</a></li>
+                <li><i class="fas fa-newspaper"></i><a href=""> Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-11 col-sm-12">
+          <!-- slider starts here -->
+          <div class="hero">
+            <div id="introduce-banner" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#introduce-banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#introduce-banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#introduce-banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                      <div class="carousel-caption">
+                        <h2><a href="#">F8 trên Facebook</a></h2>
+                        <p>F8 được nhắc đến mọi nơi, ở đâu có cơ hội việc làm IT và 
+                          có những con người yêu thích lập trình F8 sẽ ở đâu</p>
+                          <div><a href="#" class="outline-btn">Truy cập nhóm</a></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 banner">
+                      <img src="../asset/img/Banner_01.png" class="d-block w-100" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                      <div class="carousel-caption ">
+                        <h2><a href="#">Thành quả của học viên</a></h2>
+                        <p>Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó.
+                          Học lập trình cũng không ngoại lệ.
+                        </p>
+                        <div><a href="#" class="outline-btn">Xem thành quả</a></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 banner">
+                      <img src="../asset/img/Banner_02.png" class="d-block w-100" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                      <div class="carousel-caption">
+                        <h2><a href="#">F8 trên Youtube</a></h2>
+                        <p>F8 được nhắc đến mọi nơi, ở đâu có cơ hội việc làm IT và 
+                          có những con người yêu thích lập trình F8 sẽ ở đâu
+                        </p>
+                        <div><a href="#" class="outline-btn">Truy cập kênh</a></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 banner">
+                      <img src="../asset/img/Banner_03_youtube.png" class="d-block w-100" alt="">
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#introduce-banner" data-bs-slide="prev">
+                <i class="fas fa-chevron-left"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#introduce-banner" data-bs-slide="next">
+                <i class="fas fa-chevron-right"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- slider ends here -->
+          <!-- course starts here -->
+          <div class="course">
+            <p><strong>35.572+</strong> người đã học</p>
+            <div class="course__heading">
+              <h2>Khóa học nổi bật</h2>
+              <div>
+                <a href="#">Xem tất cả <i class="far fa-chevron-right"></i></a>
+              </div>
+            </div>
+            <div class="course__container">
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_html_css.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_javascript.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_fundamental.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_responsive.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_nodejs.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_html_tip_trick.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_reactjs.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_javascript_advance.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_dont_touch.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+              <div class="course__item">
+                <div class="course__item__thumb" style="background-image: url(/asset/img/course_windows_terminal.png);"></div>
+                <div class="course__item__title">
+                  <a href="#">HTML,CSS từ zero tới hero</a>
+                </div>
+                <div class="course__item__studentCount">
+                  <i class="far fa-users"></i> 89.476
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- course ends here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content ends here -->
+  
+  <!-- footer starts here -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <div class="footer__nav">
+            <a href="#"><img src="/asset/img/f8_icon.png" width="20px" height="20px" alt="footer-logo"></a>
+            <ul>
+              <li><a href="">Giới thiệu</a></li>
+              <li><a href="">Cơ hội việc làm</a></li>
+              <li class="pop-up">
+                <ul>
+                  <li><a href="#">Tải phần mềm Macbook</a></li>
+                  <li><a href="#">Evondev</a></li>
+                </ul>
+                <a href="">Đối tác <i class="far fa-chevron-up"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="footer__social__icons">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

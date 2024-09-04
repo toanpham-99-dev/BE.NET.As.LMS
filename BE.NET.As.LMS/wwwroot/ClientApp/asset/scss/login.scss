@@ -1,0 +1,304 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),
+    url(https://cdn.fullstack.edu.vn/f8-learning/manual_uploads/f8_bg_auth_1366.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+$button-color: #1dbfaf;
+$button-image: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
+$color-white : white;
+
+.DL__login {
+    width: 39.9375rem;
+    height: 34.9375rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background: $color-white;
+    border-radius: 0.625rem;
+    padding: 1rem 1.5rem;
+}
+
+///////Header/////////
+.DL__header-logo-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    a {
+        img {
+            width: 2.75rem;
+            height: 2.75rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        font-style: bold;
+        font-weight: 650;
+        margin-top: 1.5rem;
+    }
+}
+
+//////////////////Form//////////////////////
+.DL__login-main-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    p {
+        text-align: center;
+        font-weight: 370;
+
+        a {
+            color: #f05123 !important;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+////////////////////link bottom////////////////////
+.DL__link-bottom {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1rem;
+    padding-bottom: 5.6rem;
+    color: $color-white;
+    div {
+        margin-right: 0.6rem;
+
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+}
+
+/////////////////////Respone/////////////////////
+@media screen and (max-width: 500px) {
+    .DL__login {
+        width: 18.0625rem;
+        height: 34.5rem;
+        margin-top: 0;
+        border-radius: 0;
+        border-bottom-left-radius: 0.625rem;
+        border-bottom-right-radius: 0.625rem;
+        padding-top: 2px;
+    }
+
+    .DL__header-logo-wrapper {
+        margin-top: 0rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .DL__link-bottom {
+        display: none;
+    }
+}
+
+
+///////////////////main content/////////////////////////
+.DL__main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.DL__main-form-body {
+    width: 380px;
+    max-width: 100%;
+}
+
+.DL__main-form-body-control {
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.DL__main-form-body-control-wrapper {
+    text-align: left;
+    color: #292929;
+    width: 100%;
+}
+
+.DL__main-form-body-control-wrapper-lableGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DL__FormInput_label-top {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin: 10px 0 10px 8px;
+    display: block;
+}
+
+.DL__FormInput_label-top.DL__FormInput_label-top-right {
+    cursor: pointer;
+}
+
+.DL__FormInput_inputWrap__3nvHC {
+    background: rgba(22,24,35,.06);
+    border: 1px solid rgba(22,24,35,.06);
+    border-radius: 44px;
+    overflow: hidden;
+    height: 44px;
+    display: flex;   
+}
+
+.DL__FormSelect_insideInput__22ntL {
+    height: 100%;
+    padding: 0 8px 0 16px;
+    position: relative;
+}
+
+.DL__FormSelect_wrapper__3A6sJ {
+    text-align: left;
+    color: #292929;
+    cursor: pointer;
+}
+
+.DL__FormSelect_label__3yh_1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #292929;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FormInput_inputWrap__3nvHC input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 12px 20px;
+    display: block;
+    flex: 1 1;
+}
+
+//////////////input//////////// 
+input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 12px 20px;
+    display: block;
+    flex: 1 1;
+}
+
+
+.DL__FormInput_rightBtn__ee9Ll.DL__FormInput_disabled__2ijT8 {
+    color: #757575;
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.DL__FormInput_rightBtn__ee9Ll {
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 44px;
+    min-width: 140px;
+    white-space: nowrap;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DL__ranks_primary__2JGDX[disabled] {
+    box-shadow: none;
+}
+
+.DL__sizes_m__22wtO .DL__sizes_inner__37l4f {
+    padding: 8px 16px;
+    width: 379px;
+    border-radius: 24px;
+    height: 39px;
+}
+
+.DL__base_inner__2tVEb {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.DL__base_text__32VOf {
+    opacity: 1;
+    transition: opacity .15s cubic-bezier(.2,.2,.2,1);
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.DL__ranks_primary__2JGDX {
+    background-color: $button-color;
+    background-image: $button-image;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
+.FormSelect_icon__3baMV {
+    margin-left: 10px;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+button {
+    width: 379px;
+    border-radius: 24px;
+    margin-top: 1.5rem;
+}
+
+
+.FormSelect_insideInput__22ntL:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    width: 1px;
+    height: 70%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: rgba(22,24,35,.06);
+}
+
+////////////button prepage////////////////
+.Login_backBtn__31vcK {
+    position: absolute;
+    left: 440px;
+    top: 54px;
+    padding: 32px;
+    font-size: 1.3rem;
+    color: #404040;
+}
+
+.svg-inline--fa.fa-w-10 {
+    width: 0.625em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}

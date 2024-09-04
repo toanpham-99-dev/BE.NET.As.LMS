@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.H-search-results {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.25rem;
+    .H-search-results-wrapper {
+        width: 70%;
+        margin: 0.625rem auto;
+        .H-search-header {
+            margin-bottom: 10px;
+            h1 {
+                font-size: 2rem;
+            }
+            .H-related-topics-heading {
+                font-size: 1rem;
+            }
+        }
+        .H-banner {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border: 0.0625rem solid #d1d7dc;
+            div {
+                margin: 0.625rem;
+            }
+        }
+    }
+    .H-container-results {
+        margin-top: 1rem ;
+        .H-filter-heading {
+            display: flex;
+            gap: 0.3125rem;
+            .btn {
+                position: relative;
+                text-align: left;
+                border: 0.0625rem solid #d1d7dc;
+                .fa-sort-down {
+                    position: absolute;
+                    top: 40%;
+                    right: 0;
+                }
+            }
+            
+        }
+        .H-content-results {
+            margin-top: 1.25rem;
+            .H-filter-sidebar-panel {
+                width: 20%;
+                float: left;
+                padding-top: 0.625rem;
+                border-top: 0.0625rem solid #d1d7dc;
+                .H-content-panel {
+                    div.H-content-panel-heading {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            i {
+                                line-height: 0.3125rem;
+                            }
+                        }
+                    }
+                    input {
+
+                        border: 0.0625rem solid #d1d7dc;
+                    }
+                    label {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .H-container-result-item {
+                width: 80%;
+                float: right;
+                display: flex;
+                flex-direction: column;
+                .H-result-ietm {
+                    width: 80%;
+                    margin-top: 20px;
+                    margin-left: 3.125rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.625rem;
+                    padding: 0px 3.125rem 50px 0px;
+                    border-bottom: 0.0625rem solid #d1d7dc;
+                    img {
+                        width: 16.25rem;
+                        height: 9.125rem;
+                    }
+                    .H-item-info {
+                        height: 9.125rem;
+                        margin-left: 10px;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        
+                        .H-course-title {
+                            color: #04060a;
+                            font-weight: 700;
+                            line-height:19px;
+                        }
+                        .H-course-text-sm {
+                            font-size: 14px;
+                        }
+                        .H-course-instructor,
+                        .H-course-info {
+                            color:#6a6f73;
+                            font-size: 12px;
+                        }
+                        .H-course-rate {
+                            font-size: 14px;
+                            .fa-star {
+                                color: yellow;
+                            }
+                        }
+                        .H-course-bestSeller {
+                            color: #3d3c0a;
+                            background-color: #eceb98;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

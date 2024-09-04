@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F8</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="../asset/scss/home-page.css">
+  <link rel="stylesheet" href="../asset/scss/search/search.css">
+</head>
+<body>
+  <!-- header starts here -->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <div>
+            <a href="#" class="header__logo"><img src="/asset/img/f8_icon.png" alt="f8-logo" width="36px" height="36px"></a>
+            <h4 class="header__title">Học lập trình để đi làm</h4>
+          </div>
+          <a class="header__hamburger-btn"><i class="fas fa-bars"></i></a>
+          <ul>
+            <li><a href=""><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+            <li><a href=""><i class="fas fa-home"></i> Home</a></li>
+            <li><a href=""><i class="fas fa-hiking"></i> Lộ trình</a></li>
+            <li><a href=""><i class="fas fa-lightbulb"></i> Học</a></li>
+            <li><a href=""><i class="fas fa-newspaper"></i> Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <div id="search-form" class="header__search" onkeyup="myFunction()">
+            <i class='bx bx-search-alt-2'></i>
+            <input value="" id="searchText" type="text" class="header__search__input" placeholder="Tìm kiếm khóa học, bài biết, video, ...">
+            
+            <!-- <div class="header__search__results">
+              <p><i class='bx bx-search-alt-2'></i> Kết quả cho 'something'</p>
+              <div class="recommended__results">
+                <div class="recommended__results__heading">
+                  <h5>Bài Viết</h5>
+                  <a href="">Xem thêm</a>
+                </div>
+                <a href="" class="recommended__results__item"><img src="/asset/img/f8_icon.png" witdh="32px" height="32px" alt=""><span>html, css</span></a>
+                <a href="" class="recommended__results__item"><img src="/asset/img/avatar__search.jpg" witdh="32px" height="32px"  alt=""><span>html, css</span></a>
+                <a href="" class="recommended__results__item"><img src="/asset/img/avatar__search.jpg" witdh="32px" height="32px" alt=""><span>html, css</span></a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="header__login">
+            <a class="header__login__alt-search"><i class='bx bx-search-alt-2'></i></a>
+            <a class="header__login__cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="header__login__btn">Đăng Nhập</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <!-- content starts here -->
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-1  hide-sidebar">
+          <div class="sidebar">
+            <div class="sidebar__btn">
+              <i class="fas fa-plus"></i>
+              <ul>
+                <li><a href=""><i class="fas fa-pen"></i> Viết Blog</a></li>
+                <li><a href=""><i class="fas fa-question"></i> Đặt câu hỏi</a></li>
+                <li><a href=""><i class="fas fa-code"></i> Chia sẻ code</a></li>
+              </ul>
+            </div>
+            <div class="sidebar__nav">
+              <ul>
+                <li class="active"><i class="fas fa-home"></i><a href="">Home</a></li>
+                <li><i class="fas fa-hiking"></i><a href=""> Lộ trình</a></li>
+                <li><i class="fas fa-lightbulb"></i><a href=""> Học</a></li>
+                <li><i class="fas fa-newspaper"></i><a href=""> Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-11 col-sm-12">
+        <!-- search start -->
+        <section class="H-search-results">
+            <div class="H-search-results-wrapper">
+                <div class="H-search-header">
+                    <h1><span id="result">3,125</span> results for "<span id="search">angular</span>"</h1>
+                    <div class="H-related-topics">
+                        <h3 class="H-related-topics-heading">
+                            Explore <a href="#">Angular course</a>
+                        </h3>
+                        <h4 class="H-related-topics-content">
+                            Students also learn more
+                            <a href="#">TypeScript</a>,
+                            <a href="#">Angular Material</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="H-banner">
+                    <div><i class="fas fa-exclamation"></i></div>
+                    <div>Not sure? All courses have a 30-day money-back guarantee</div>
+                </div>
+                <div class="H-container-results">
+                    <div class="H-filter-heading">
+                        <button class="btn filter">
+                            <i class="fas fa-sort-amount-down"></i>
+                            Filter
+                        </button>
+                        <button class="btn">
+                            <div>
+                                <span>Sort by</span>
+                            </div>
+                            <i class="fas fa-sort-down"></i>
+                            <span>Most Relevent</span>
+                        </button>
+                    </div>
+                    <div class="H-content-results">
+                        <div class="H-filter-sidebar-panel">
+                           <div class="H-content-panel c-p">
+                               <div class="H-content-panel-heading c-p-h">
+                                   <h4>Topic</h4>                                 
+                                    <i onclick="toggle(this)" class="fas fa-sort-up sort-up"></i>
+                                    <i onclick="toggle(this)" class="fas fa-sort-down sort-down"></i>
+                               </div>
+                               <div class="option-filter">
+                                   <input type="checkbox" name="vehicle1" value="Bike">
+                                   <label for="vehicle1">Node js <span>(12)</span></label><br>
+                                   <input type="checkbox" name="vehicle2" value="Car">
+                                   <label for="vehicle2">ASP.NET Core<span>(15)</span></label><br>
+                                   <input type="checkbox" name="vehicle3" value="Boat">
+                                   <label for="vehicle3">Spring Boot<span>(10)</span></label><br>
+                                   <input type="checkbox" name="vehicle3" value="Boat">
+                                   <label for="vehicle3">JavaScript<span>(30)</span></label><br>
+                                   <input type="checkbox" name="vehicle3" value="Boat">
+                                   <label for="vehicle3">Ionic<span>(20)</span></label><br>
+                               </div>
+                           </div>
+                          
+                           <div class="H-content-panel c-p">
+                            <div class="H-content-panel-heading c-p-h">
+                                <h4>Topic</h4>                                 
+                                 <i onclick="toggle(this)" class="fas fa-sort-up sort-up"></i>
+                                 <i onclick="toggle(this)" class="fas fa-sort-down sort-down"></i>
+                            </div>
+                            <div class="option-filter">
+                                <input type="checkbox" name="vehicle1" value="Bike">
+                                <label for="vehicle1">Node js <span>(12)</span></label><br>
+                                <input type="checkbox" name="vehicle2" value="Car">
+                                <label for="vehicle2">ASP.NET Core<span>(15)</span></label><br>
+                                <input type="checkbox" name="vehicle3" value="Boat">
+                                <label for="vehicle3">Spring Boot<span>(10)</span></label><br>
+                                <input type="checkbox" name="vehicle3" value="Boat">
+                                <label for="vehicle3">JavaScript<span>(30)</span></label><br>
+                                <input type="checkbox" name="vehicle3" value="Boat">
+                                <label for="vehicle3">Ionic<span>(20)</span></label><br>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="H-container-result-item" id="course-container-result">
+                         
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+        <!-- search end  -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content ends here -->
+  
+  <!-- footer starts here -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <div class="footer__nav">
+            <a href="#"><img src="/asset/img/f8_icon.png" width="20px" height="20px" alt="footer-logo"></a>
+            <ul>
+              <li><a href="">Giới thiệu</a></li>
+              <li><a href="">Cơ hội việc làm</a></li>
+              <li class="pop-up">
+                <ul>
+                  <li><a href="#">Tải phần mềm Macbook</a></li>
+                  <li><a href="#">Evondev</a></li>
+                </ul>
+                <a href="">Đối tác <i class="far fa-chevron-up"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="footer__social__icons">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/searchAPI.js"></script>
+  <script>
+      let check = true;
+      display();
+      function display(e) {
+        if (!e) {
+          $('.sort-up').hide();
+          return;
+        }
+        if (check === true) {
+            $(e).hide();
+            $(e).closest('.c-p').find('.sort-up').show();
+            $(e).closest('.c-p-h').closest('.c-p').find('.option-filter').show();
+        } else {
+            $(e).closest('.c-p').find('.sort-down').show();
+            $(e).hide();
+            $(e).closest('.c-p-h').closest('.c-p').find('.option-filter').hide();
+        }
+      }
+    function toggle(e) {
+        check = !check;
+        display(e);
+    }
+  </script>
+</body>
+</html>
+
+

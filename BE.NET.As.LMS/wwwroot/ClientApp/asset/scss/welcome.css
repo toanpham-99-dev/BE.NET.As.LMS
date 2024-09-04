@@ -1,0 +1,141 @@
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(https://cdn.fullstack.edu.vn/f8-learning/manual_uploads/f8_bg_auth_1366.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://cdn.fullstack.edu.vn/f8-learning/manual_uploads/f8_bg_auth_1366.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.DL__login {
+  width: 39.9375rem;
+  height: 34.9375rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  background: white;
+  border-radius: 0.625rem;
+  padding: 1rem 1.5rem;
+}
+
+.DL__header-logo-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.DL__header-logo-wrapper a img {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.DL__header-logo-wrapper h2 {
+  text-align: center;
+  font-style: bold;
+  font-weight: 650;
+  margin-top: 1.5rem;
+}
+
+.DL__login-main-content {
+  --height: 2.75rem;
+  width: 20rem;
+  text-align: center;
+  line-height: var(--height);
+  border: 0.125rem solid #dce0e3;
+  background-color: #fff;
+  border-radius: 2.75rem;
+  position: relative;
+  padding-left: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.DL__login-main-content:hover {
+  cursor: pointer;
+  background-color: #dce0e3;
+}
+
+.DL__login-main-content .DL__login-main-content-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.DL__login-main-content .DL__login-main-content-text {
+  font-weight: 600;
+  line-height: 2.75rem;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #35414c;
+  font-size: 1rem;
+}
+
+.DL__login-main-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
+.DL__login-main-bottom p {
+  text-align: center;
+  font-weight: 370;
+}
+
+.DL__login-main-bottom p a {
+  color: #f05123 !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.DL__link-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin-top: 1rem;
+  padding-bottom: 5.6rem;
+  color: white;
+}
+
+.DL__link-bottom div {
+  margin-right: 0.6rem;
+}
+
+.DL__link-bottom div a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .DL__login {
+    width: 18.0625rem;
+    height: 34.5rem;
+    margin-top: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    padding-top: 2px;
+  }
+  .DL__header-logo-wrapper {
+    margin-top: 0rem;
+  }
+  .DL__header-logo-wrapper h2 {
+    font-size: 2rem;
+  }
+  .DL__link-bottom {
+    display: none;
+  }
+}
+/*# sourceMappingURL=welcome.css.map */
